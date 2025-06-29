@@ -197,6 +197,30 @@
     </div>
 </div>
 </body>
+
+<button id="backToTopBtn" class="back-to-top" title="Back to top">
+  <img src="icons/top.svg" alt="Back to top" />
+</button>
+
+<script>
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
 <script>
   document.getElementById('downloadBtn').addEventListener('click', () => {
     window.print();
