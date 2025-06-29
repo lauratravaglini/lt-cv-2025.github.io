@@ -120,7 +120,7 @@ body {
 
 .job-title {
     font-size: 13pt;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 3px;
     color: #2A2D3A;
     margin: 0; /* reset any unexpected spacing */
@@ -204,7 +204,7 @@ body {
 }
 
 .skill-category-title {
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 6px;
     font-size: 13pt;
     color: #2A2D3A;
