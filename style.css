@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: '36days';
+    src: url('fonts/Dirtyline\ 36daysoftype\ 2022.woff2') format('woff2');
+}
+
+@page {
+    size: A4;
+    margin: 0.75in;
+}
+
+.download-btn {
+  position: fixed;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+      color: #2A2D3A;
+  top: 20px;
+  right: 100px;
+  z-index: 999;
+  border: none;
+  padding: 8px 14px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #2A2D3A;
+    color: white;
+;
+}
+
+@media print {
+  .download-btn {
+    display: none;
+  }
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    color: #2A2D3A;
+    background: #FAFAFC;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 11pt;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.name {
+   font-family: '36days';
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #2A2D3A;
+}
+
+.title {
+    font-size: 13pt;
+    color: #2A2D3A;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact {
+    font-size: 11pt;
+    color: #6B7891;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact a {
+    color: #6B7891;
+    text-decoration: none;
+}
+
+.section {
+    margin-bottom: 35px;
+    page-break-inside: avoid;
+}
+
+.section-title {
+    font-family: '36days';
+    font-size: 19pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.1rem;
+    color: #5B6EF5;
+    border-bottom: 1px solid #5B6EF5;
+    padding-bottom: 6px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+    page-break-inside: avoid;
+}
+
+.job-title {
+    font-size: 13pt;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: #2A2D3A;
+    margin: 0; /* reset any unexpected spacing */
+    line-height: 1.2; /* optional for tighter vertical alignment */
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.company-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.noho-logo {
+  filter: invert(1);
+}
+
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 4px;
+   transition: filter 0.2s ease;
+}
+
+.arrow-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.arrow-link:hover .arrow-icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.job-meta {
+    font-size: 10pt;
+    font-weight: 400;
+    color: #6B7891;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.job-description {
+    color: #2A2D3A;
+    font-size: 10.5pt;
+}
+
+.job-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.job-description li {
+    margin-bottom: 4px;
+    padding-left: 12px;
+    position: relative;
+}
+
+.job-description li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #999;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    margin-bottom: 15px;
+}
+
+.skill-category-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 13pt;
+    color: #2A2D3A;
+}
+
+.skill-list {
+    font-size: 11pt;
+    color: #2A2D3A;
+    line-height: 1.4;
+}
+
+.soft-skills {
+    font-size: 11pt;
+    color: #2A2D3A;
+    line-height: 1.5;
+}
+
+.publication {
+    margin-bottom: 15px;
+    font-size: 11pt;
+    line-height: 1.4;
+    page-break-inside: avoid;
+}
+
+
+.pub-title {
+    font-style: italic;
+}
+
+.pub-venue {
+    color: #6B7891;
+}
+
+.activities {
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #2A2D3A;
+}
+
+.activities div {
+    margin-bottom: 6px;
+    page-break-inside: avoid;
+}
+
+.certifications {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cert {
+    font-size: 10pt;
+    color: #2A2D3A;
+}
+
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 10pt;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        margin-bottom: 25px;
+    }
+
+    .contact {
+        font-size: 9pt;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .certifications {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
