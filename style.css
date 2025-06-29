@@ -36,9 +36,11 @@
 ;
 }
 
-@media print {
+@media (max-width: 768px) {
   .download-btn {
-    display: none;
+    position: static;
+    display: block;
+    margin: 10px auto;
   }
 }
 
