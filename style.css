@@ -101,14 +101,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 10pt;
+  font-size: 11pt;
   color: #6B7891;
   line-height: 1.8;
-  margin-top: 10px;
-}
-
-.contact-item {
-  margin: 4px 0;
 }
 
 .contact-item a {
@@ -133,7 +128,7 @@ body {
 
 .btn-social {
   background-color: white;
-  color: #5B6EF5;
+  color: #6B7891;
   border: 1px solid #ccc;
   padding: 8px 14px;
   font-size: 12px;
