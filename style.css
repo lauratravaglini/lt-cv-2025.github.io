@@ -97,9 +97,32 @@ body {
     text-decoration: none;
 }
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10pt;
+  color: #6B7891;
+  line-height: 1.8;
+  margin-top: 10px;
+}
 
-/* Social Buttons */ 
+.contact-item {
+  margin: 4px 0;
+}
 
+.contact-item a {
+  color: #6B7891;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: #5B6EF5;
+}
+
+
+/* Social Buttons*/ 
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -130,8 +153,6 @@ body {
   background-color: #f3f3f3;
   border-color: #bbb;
 }
-
-
 
 /* Sections */
 
