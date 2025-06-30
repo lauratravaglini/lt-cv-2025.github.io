@@ -6,6 +6,24 @@
     <title>Laura Travaglini - CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+  function downloadPDF() {
+    const element = document.getElementById('cv-content');
+
+    const opt = {
+      margin:       0.5,
+      filename:     'Laura_Travaglini_CV.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
+  }
+</script>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Q9V59ZFJ4"></script>
@@ -17,11 +35,15 @@
   gtag('config', 'G-9Q9V59ZFJ4');
 </script>
 </head>
-<body>
+<body id="cv-content">
 
    
     <div class="header">
-        <button id="downloadBtn" class="download-btn" onclick="gtag('event', 'download_cv', {event_category: 'engagement', event_label: 'Download CV'}); window.location.href='Laura_Travaglini_CV.pdf';">⬇️ Download as PDF</button>
+        <button id="downloadBtn" class="download-btn"
+  onclick="downloadPDF(); gtag('event', 'download_cv', {event_category: 'engagement', event_label: 'Download CV'});">
+  ⬇️ Download as PDF
+</button>
+
         <h1 class="name">Laura Travaglini</h1>
         <div class="title">Research Fellow | Digital Humanist | Junior UX/UI Designer</div>
 
