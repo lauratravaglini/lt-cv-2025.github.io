@@ -39,11 +39,7 @@
 
    
     <div class="header">
-        <button id="downloadBtn" class="download-btn"
-  onclick="downloadPDF(); gtag('event', 'download_cv', {event_category: 'engagement', event_label: 'Download CV'});">
-  ⬇️ Download as PDF
-</button>
-
+       <button id="downloadBtn" class="download-btn" onclick="downloadPDF()">⬇️ Download as PDF</button>
         <h1 class="name">Laura Travaglini</h1>
         <div class="title">Research Fellow | Digital Humanist | Junior UX/UI Designer</div>
 
@@ -269,6 +265,7 @@
                     </ul>
     </div>
 </div>
+<script src="main.js"></script>
 </body>
 
 <button id="backToTopBtn" class="back-to-top" title="Back to top">
@@ -291,12 +288,6 @@
       top: 0,
       behavior: 'smooth'
     });
-  });
-</script>
-
-<script>
-  document.getElementById('downloadBtn').addEventListener('click', () => {
-    window.print();
   });
 </script>
 
