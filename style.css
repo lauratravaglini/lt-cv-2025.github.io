@@ -14,6 +14,9 @@
     margin: 0.75in;
 }
 
+
+/* Download Button */
+
 .download-btn {
   position: fixed;
   font-family: poppins, sans-serif;
@@ -63,6 +66,7 @@ body {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
 
 
 .header {
@@ -128,7 +132,7 @@ body {
 
 .btn-social {
   background-color: white;
-  color: #6B7891;
+  color: #6B7891; 
   border: 1px solid #ccc;
   padding: 8px 14px;
   font-size: 12px;
@@ -351,10 +355,12 @@ body {
     }
 }
 
+/* Back to Top Button */
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 100px;
+  right: 50px;
   background: white;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -373,3 +379,5 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
+

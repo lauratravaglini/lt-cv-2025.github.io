@@ -1,3 +1,5 @@
+/* Download CV Button */
+
 function downloadPDF() {
   // First, track the event
   gtag('event', 'download_cv', {
